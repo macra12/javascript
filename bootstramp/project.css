@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green: rgb(32,162,6);
+}
+/* Menu */
+.Menu{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+    background-color: white;
+    /* box-shadow: 5px 5px 10px; */
+}
+.logo h1{
+    color: var(--green);
+}
+.navbar ul li{
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: small;
+    color: gray;
+}
+.navbar ul li a:hover{
+    color:var(--green);
+}
+#btnsearch{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 77%;
+    
+}
+
+.col-md-6 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color:var(-green);
+}
+.col-md-6 h4{
+    color: blueviolet;
+}
+.input-group{
+    height: 60px;
+    border: 3px solid var(--red);
+    border-radius: 30px;
+}
+.input-group input{
+    border-radius: 30px;
+}
+.input-group button{
+    border-radius: 30px;
+    color: blue;
+    background-color: var(--green);
+}
+.input-group button:hover{
+    color: white;
+    background-color: brown;
+}
+.icon{
+    margin-left: 20%;
+}
+.box-icon{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--green);
+}
+.box-icon .area{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    inset: 128px 45px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: var(--green);
+}
+.nav-item button{
+    background-color: gray;
+    margin-left: 10px;
+    color: white;
+    padding: 10px 30px;
+}
+.card-footerr img{
+    border-radius: 25px ;
+}
+@media(max-width:567px){
+    ul{
+        flex-direction: column;
+    }
+
+}

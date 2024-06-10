@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Domains</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <style>
+        td, th {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .manage {
+            padding: 5px 10px;
+            background-color: green;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .active, .inactive, .expired {
+            padding: 5px 5px;
+            border-radius: 5px;
+        }
+        .active {
+            background-color: aqua;
+        }
+        .inactive {
+            background-color: yellow;
+        }
+        .expired {
+            background-color: red;
+        }
+        *{
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="domains bg-dark p-3 text-light d-flex justify-content-between">
+            <h1>Manage Domains</h1>
+            <div class="action nav nav-tabs me-5 h-25 w-50">
+                <button style="width: 15%;" class="btn btn-primary h-100 mx-2" data-bs-target="#all" data-bs-toggle="tab">
+                    All
+                </button>
+                <button class="btn btn-success h-100 w-25 mx-2" data-bs-target="#active" data-bs-toggle="tab">
+                    Active
+                </button>
+                <button style="width: 25%;" class="btn btn-warning h-100 mx-2 text-light" data-bs-target="#inactive" data-bs-toggle="tab">
+                    Inactive
+                </button>
+                <button class="btn btn-danger h-100 mx-2" data-bs-target="#expired" data-bs-toggle="tab">
+                    Expired
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <table class="table table-dark tab-content table-hover table-bordered text-light">
+            <tr>
+                <th>#</th>
+                <th>Domains</th>
+                <th>Create on</th>
+                <th>Status</th>
+                <th>Server locations</th>
+                <th>Action</th>
+            </tr>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <!-- Include all rows here -->
+                    <tr>
+                        <td>1</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Cambodia</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="inactive">Inactive</p></td>
+                        <td>Spain</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Egypt</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="expired">Expired</p></td>
+                        <td>United Kingdom</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="inactive">Inactive</p></td>
+                        <td>USA</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                </div>
+                <div class="tab-pane fade" id="active" role="tabpanel">
+                    <!-- Rows for active domains -->
+                    <tr>
+                        <td>1</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Cambodia</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Egypt</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                </div>
+                <div class="tab-pane fade" id="active" role="tabpanel">
+                    <!-- Rows for active domains -->
+                    <tr>
+                        <td>1</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Cambodia</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="active">Active</p></td>
+                        <td>Egypt</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                </div>
+                <div class="tab-pane fade" id="inactive" role="tabpanel">
+                    <!-- Rows for inactive domains -->
+                    <tr>
+                        <td>2</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="inactive">Inactive</p></td>
+                        <td>Spain</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="inactive">Inactive</p></td>
+                        <td>USA</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                </div>
+                <div class="tab-pane fade" id="expired" role="tabpanel">
+                    <!-- Rows for expired domains -->
+                    <tr>
+                        <td>4</td>
+                        <td>khinnara99@gmail.com</td>
+                        <td>5/9/2023</td>
+                        <td><p class="expired">Expired</p></td>
+                        <td>United Kingdom</td>
+                        <td><p class="manage">Manage</p></td>
+                    </tr>
+                </div>
+            </div>
+        </table>
+    </div>
+    <script src="/bootstrap.bundle.min.js"></script>
+</body>
+</html>

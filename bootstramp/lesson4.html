@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <style>
+        td,th{
+            text-align: center;
+            vertical-align: middle;
+        }
+        #manage{
+            padding: 5px 10px;
+            background-color: green;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .active{
+            padding: 5px 5px;
+            background-color: aqua;
+            border-radius: 5px;  
+        }
+        .inactive{
+            padding: 5px 5px;
+            background-color: yellow;
+            border-radius: 5px;
+        }
+        .expired{
+            padding: 5px 5px;
+            background-color: red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="domains bg-dark p-3 text-light d-flex justify-content-between">
+            <h1>Manage Domains</h1>
+            <div class="action nav nav-tabs me-5 h-25 w-50">
+                <button style="width: 15%;" class="btn btn-primary h-100 mx-2" data-bs-target="#all" data-bs-toggle="tab">
+                    <input type="radio" name="" id="">
+                    All
+                </button>
+                <button class="btn btn-success h-100 w-25 mx-2" data-bs-target="#active" data-bs-toggle="tab">
+                    <input type="radio" name="" id="#active">
+                    Active
+                </button>
+                <button style="width: 25%;" class="btn btn-warning h-100 mx-2 text-light" data-bs-target="#inactive" data-bs-toggle="tab">
+                    <input type="radio" name="" id=" #inactive">
+                    Inactive
+                </button>
+                <button class="btn btn-danger h-100 mx-2" data-bs-target="#expired" data-bs-toggle="tab">
+                    <input type="radio" name="" id="#expired">
+                    Expired
+                </button>
+            </div>
+        </div> 
+ 
+    </div>
+    <div class="container mt-2">
+        <table class="table table-dark tab-content table-hover table-bordered text-light">
+            <tr>
+                <th>#</th>
+                <th>Domains</th>
+                <th>Create on</th>
+                <th>Status</th>
+                <th>Sever locations</th>
+                <th>Action</th>
+            </tr>
+            <tr class="tab-pane fade" id="active">
+                <td>1</td>
+                <td>khinnara99@gmail.com</td>
+                <td>5/9/2023</td>
+                <td><p class="active" style="margin-top: 20px;">Active</p></td>
+                <td>Cambodia</td>
+                <td><p id="manage">Manage</p></td>
+            </tr>
+            <tr class="tab-pane fade" id="inactive">
+                <td>2</td>
+                <td>khinnara99@gmail.com</td>
+                <td>5/9/2023</td>
+                <td><p class="inactive" style="margin-top: 20px;">Inactive</p></td>
+                <td>Spain</td>
+                <td><p id="manage">Manage</p></td>
+            </tr>
+            <tr class="tab-pane fade" id="active">
+                <td>3</td>
+                <td>khinnara99@gmail.com</td>
+                <td>5/9/2023</td>
+                <td><p class="active" style="margin-top: 20px;">Active</p></td>
+                <td>Egypt</td>
+                <td><p id="manage">Manage</p></td>
+            </tr>
+            <tr class="tab-pane fade" id="expired">
+                <td>4</td>
+                <td>khinnara99@gmail.com</td>
+                <td>5/9/2023</td>
+                <td><p class="expired" style="margin-top: 20px;">Expired</p></td>
+                <td>United Kingdom</td>
+                <td><p id="manage">Manage</p></td>
+            </tr>
+            <tr class="tab-pane fade" id="inactive">
+                <td>5</td>
+                <td>khinnara99@gmail.com</td>
+                <td>5/9/2023</td>
+                <td><p class="inactive" style="margin-top: 20px;">Inactive</p></td>
+                <td>USA</td>
+                <td><p id="manage">Manage</p></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: rgb(32, 162, 6);
+    --dark-green: rgb(26, 130, 5);
+    --gray: #6c757d;
+    --light-gray: #f8f9fa;
+    --primary: #0d6efd;
+}
+
+/* Menu */
+.Menu {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+    background-color: white;
+}
+
+.logo h1 {
+    color: var(--green);
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--gray);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--green);
+}
+
+#btnsearch {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnsearch:hover{
+    background-color:lightblue;
+}
+
+.test {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.col-md-6 h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.col-md-6 h4 {
+    color: var(--primary);
+}
+
+.input-group {
+    height: 60px;
+    border: 3px solid var(--green);
+    border-radius: 30px;
+}
+
+.input-group input,
+.input-group button {
+    border-radius: 30px;
+}
+
+.input-group button {
+    color: white;
+    background-color: var(--green);
+}
+
+.input-group button:hover {
+    color: white;
+    background-color: var(--dark-green);
+}
+
+.icon {
+    margin-left: 20%;
+}
+
+.box-icon {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--green);
+}
+
+.box-icon .area {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    inset: 128px 45px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: var(--green);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills .nav-link {
+    background-color: var(--gray);
+    margin-left: 10px;
+    color: white;
+    padding: 10px 30px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--green);
+}
+.card-product .card-footer button{
+    border-radius: 20px;
+    padding: 4px 8px;
+    border: 2px solid var(--orange);
+    font-weight: 600;
+    color: var(--green);
+}
+.card-product .card-footer button:hover{
+    background-color: orange;
+    color: wheat;
+    transition: transform 0.3s , box-shadow 0.3s;
+    
+}
+.card-product .card img{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.card-product .card img:hover{
+    transform: scale(1.02);
+}
+
+.card-product .card{
+    box-shadow: 5px 5px 10px;
+    transition: all 0.2s;
+    /* transition-delay: 0.3s; */
+    overflow: hidden;
+    transform: scale(1);
+}
+.card-product .card:hover{
+    transform: scale(1.02);
+    
+}
+.card-footerr{
+    height: 500px;
+}
+
+@media (max-width: 567px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .card-product .card{
+        width: 22rem;
+        margin-top: 15px;
+    }
+    .flex-slide{
+        flex-direction: column;
+    }
+}
+.Exotic{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+.Exotic h2{
+    font-size: 4rem;
+    color: green;
+}
+.Exotic h4{
+    font-size: 3rem;
+    color: red;
+}
+.Exotic button{
+    padding: 8px 25px;
+    border: 1px solid black;
+    font-size: medium;
+    border-radius: 25px;
+}
+.Exotic .on_pic img{
+    width: 100%;
+    height: 100%;
+}
+.Exotic .on_pic{
+    position: relative;
+}
+.Exotic .on_pic .kg h3{
+    place-self: center;
+}
+.group_btn button{
+    padding: 8px 30px;
+    margin: 10px;
+    border: 1px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
+}
+.group_btn button:hover{
+    color: #f8f9fa;
+    background-color: orange;
+}
+.Exotic .on_pic .kg{
+    position: absolute;
+    top: -18px;
+    left: -20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: burlywood;
+    display: grid;
+}
