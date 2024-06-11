@@ -16,4 +16,21 @@ function demo(a,b)
 {
     return a+ b;
 }
+
+
 console.log(demo("Data ",2.5555))
+
+//array for
+
+let array = [10,20,30];
+
+var data;
+// for(i in array){
+//     data += console.log(array[i]);
+// }
+
+for (key of array)
+{
+    data += console.log(key);
+
+}
