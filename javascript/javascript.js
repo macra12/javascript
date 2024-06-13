@@ -34,3 +34,7 @@ for (key of array)
     data += console.log(key);
 
 }
+
+console.log(array.map((e)=>e)); //output all of array
+array.forEach(Element=>{console.log(Element)}); // read only one value
+console.log(...array); //copy value in array

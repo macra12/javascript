@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        document.write("<h2>Hello Bro</h2>");
+        let id,name,sex,school,CShape,web,OOAD,total;
+        id = prompt("Input ID");
+        name = prompt("Input Name:");
+        sex = prompt("Enter Sex:");
+        school = prompt("Enter School:");
+        CShape = parseFloat(prompt("Enter C# score:"));
+        web =  parseFloat(prompt("Enter web score:"));
+        OOAD =  parseFloat(prompt("Enter ooad score:"));
+        total = CShape + web + OOAD;
+
+
+
+        document.write(`<h2>My Name = ${name}</h2>`);
+        document.write(`<h2>My ID = ${id}</h2>`);
+        document.write(`<h2>My Sex = ${sex}</h2>`);
+        document.write(`<h2>My School = ${school}</h2>`);
+        document.write(`<h2>My C#= ${CShape}</h2>`);
+        document.write(`<h2>My Website Developer = ${web}</h2>`);
+        document.write(`<h2>My OAAD = ${OOAD}</h2>`);
+        document.write(`<h2>Total = ${total}</h2>`);
+
+    </script>
+    
+</body>
+</html>
